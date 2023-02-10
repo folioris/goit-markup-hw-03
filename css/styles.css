@@ -237,6 +237,10 @@ padding-bottom: 120px;
 
 /* секція 4 */
 
+.our-team{
+padding-bottom: 120px;
+}
+
 .team-items {
     display: flex;
     gap: 24px;
@@ -274,7 +278,7 @@ padding-bottom: 120px;
     letter-spacing: 0.02em;
 }
 
-/* футер наконец-то*/
+/* футер */
 
 .footer {
     padding-top: 100px;

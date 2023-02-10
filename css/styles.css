@@ -1,19 +1,25 @@
 :root {
     --primary-text-color: #2E2F42;
-    --primary-bg-color: #ffffff;
-    --hero-background-color: #2E2F42;
-    --team-background-color: #F4F4FD;
-    --accent-color: #4D5AE5;
-    --accent-color-btn: #404BBF;
-    --description-features: #2E2F42;
-    --address-color: #434455;
-    --btn-background-color: #E7E9FC
+        --primary-bg-color: #ffffff;
+        --hero-background-color: #2E2F42;
+        --team-background-color: #F4F4FD;
+        --accent-color: #4D5AE5;
+        --accent-color-btn: #404BBF;
+        --description-features: #2E2F42;
+        --address-color: #434455;
+        --btn-background-color: #E7E9FC 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--primary-bg-color);
-    color: var(--primary-text-color);
+        font-family: 'Roboto', sans-serif;
+        background-color: var(--primary-bg-color);
+        color: var(--primary-text-color);
 }
 
 p,
@@ -97,21 +103,21 @@ img {
 }
 
 .address-navigation {
-    display: flex;
-    gap: 40px;
-    padding: 24px 0;
-    justify-content: flex-end;
+display: flex;
+gap: 40px;
+padding: 24px 0;
+justify-content: flex-end;
 }
 
 .address-nav {
     display: flex;
-    color: var(--address-color);
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+     color: var(--address-color);
+     text-decoration: none;
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 1.5;
+     letter-spacing: 0.02em;
 }
 
 .address-nav:hover {
@@ -126,11 +132,14 @@ img {
     color: var(--accent-color-btn);
 }
 
-.title {
+.title{
     height: auto;
+    padding-top: 188px;
+    padding-bottom: 188px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--hero-background-color);
+    text-align: center
 }
 
 .title-desc {
@@ -141,8 +150,7 @@ img {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    padding-top: 188px;
-    padding-bottom: 188px;
+
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 48px;
@@ -166,35 +174,48 @@ img {
 }
 
 .main-btn:hover {
-    background-color: var(--accent-color-btn);
-    color: white;
+ background-color: var(--accent-color-btn);
+ color: white;
 }
 
 .main-btn:focus {
     color: var(--accent-color);
 }
 
+/* 2 cекція */
+
+.features{
+    display: flex;
+    gap: 24px;
+}
+
 .features-titles {
     color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    padding-top: 120px;
+    padding-bottom: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
 }
 
 .features-desc {
     color: var(--description-features);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
 }
 
-.our-team {
-    background-color: var(--team-background-color);
-}
+/* 3 секція */
 
 .title-aboutus {
+    padding-top: 120px;
+    padding-bottom: 72px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -202,7 +223,41 @@ img {
     letter-spacing: 0.02em;
 }
 
+.about-us{
+    display: flex;
+    gap: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.cards-aboutus {
+padding-bottom: 120px;
+}
+
+/* секція 4 */
+
+.team-items {
+    display: flex;
+    gap: 24px;
+}
+
+.team-name{
+    padding: 32px 16px;
+    background-color: var(--primary-bg-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    }
+
+.our-team {
+    background-color: var(--team-background-color);
+}
+
 .title-names {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 8px;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 20px;
@@ -211,6 +266,7 @@ img {
 }
 
 .card-desc {
+    text-align: center;
     color: var(--address-color);
     font-weight: 400;
     font-size: 16px;
@@ -218,58 +274,65 @@ img {
     letter-spacing: 0.02em;
 }
 
+/* футер наконец-то*/
+
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: var(--hero-background-color);
 }
 
 .footer-desc {
     color: var(--btn-background-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
 }
 
-.logo-footer {
+.logo-second-part-footer {
     text-decoration: none;
-    color: #ffffff;
-    font-family: 'Raleway';
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.16;
+        color: #ffffff;
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16;
 }
+
+/* ПОРТФОЛІО */
+
 
 .nav-buttons {
     font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    cursor: pointer;
-    color: var(--accent-color);
-    background: var(--team-background-color);
-    border-radius: 4px;
-    border: var(--btn-background-color);
-}
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+        color: var(--accent-color);
+        background: var(--team-background-color);
+        border-radius: 4px;
+        border: var(--btn-background-color);
+    }
 
 .nav-buttons:hover,
 .nav-buttons:focus {
-    color: var(--primary-bg-color);
-    background-color: var(--accent-color);
+color: var(--primary-bg-color);
+background-color: var(--accent-color);
 }
 
 .caption-cards {
     color: var(--description-features);
     font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
 }
 
 .portfolio-desc {
     color: var(--address-color);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
 }

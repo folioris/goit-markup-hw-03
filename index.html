@@ -4,59 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html">WebStudio</a>
-        <ul>
-          <li><a href>Studio</a></li>
-          <li><a href>Portfolio</a></li>
-          <li><a href>Contacts</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul>
-          <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-        </ul>
-      </address>
+    <header class="header section">
+      <div class="container header-container">
+        <nav class="nav-header">
+          <a href="./index.html" class="logo"
+            ><span class="logo-first-part">Web</span
+            ><span class="logo-second-part">Studio</span></a
+          >
+          <ul class="menu-navigation list">
+            <li>
+              <a class="menu-nav" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="menu-nav" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="menu-nav" href>Contacts</a></li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="address-navigation list">
+            <li>
+              <a class="address-nav" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="address-nav" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
-      <section>
-        <h1>Effective Solutions for Your Business</h1>
-        <button type="button">Order Service</button>
+      <section class="title">
+        <div class="container">
+          <h1 class="title-desc">Effective Solutions for Your Business</h1>
+          <button type="button" class="main-btn">Order Service</button>
+        </div>
       </section>
+
       <section>
         <h2 hidden>"Features">Features</h2>
-        <ul>
+        <ul class="list">
           <li>
-            <h3>Strategy</h3>
-            <p>
+            <h3 class="features-titles">Strategy</h3>
+            <p class="features-desc">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
           <li>
-            <h3>Punctuality</h3>
-            <p>
+            <h3 class="features-titles">Punctuality</h3>
+            <p class="features-desc">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
           <li>
-            <h3>Diligence</h3>
-            <p>
+            <h3 class="features-titles">Diligence</h3>
+            <p class="features-desc">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
           <li>
-            <h3>Technologies</h3>
-            <p>
+            <h3 class="features-titles">Technologies</h3>
+            <p class="features-desc">
               Design practice focused on digital experiences. We bring forth a
               deep passion for problem-solving.
             </p>
@@ -64,9 +93,8 @@
         </ul>
       </section>
       <section>
-        <h2>What are we doing</h2>
-
-        <ul>
+        <h2 class="title-aboutus">What are we doing</h2>
+        <ul class="list">
           <li>
             <img
               src="./images/img1.jpg"
@@ -93,19 +121,19 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Our Team</h2>
-        <ul>
+      <section class="our-team">
+        <h2 class="title-aboutus">Our Team</h2>
+        <ul class="list">
           <li>
             <img
               src="./images/card1.jpg"
               alt="Mark Guerrero Product
-            Designer"
+             Designer"
               width="264"
               height="260"
             />
-            <h3>Mark Guerrero</h3>
-            <p>Product Designer</p>
+            <h3 class="title-names">Mark Guerrero</h3>
+            <p class="card-desc">Product Designer</p>
           </li>
           <li>
             <img
@@ -114,8 +142,8 @@
               width="264"
               height="260"
             />
-            <h3>Tom Ford</h3>
-            <p>Frontend Developer</p>
+            <h3 class="title-names">Tom Ford</h3>
+            <p class="card-desc">Frontend Developer</p>
           </li>
           <li>
             <img
@@ -124,8 +152,8 @@
               width="264"
               height="260"
             />
-            <h3>Camila Garcia</h3>
-            <p>Marketing</p>
+            <h3 class="title-names">Camila Garcia</h3>
+            <p class="card-desc">Marketing</p>
           </li>
           <li>
             <img
@@ -134,15 +162,17 @@
               width="264"
               height="260"
             />
-            <h3>Daniel Wilson</h3>
-            <p>UI Designer</p>
+            <h3 class="title-names">Daniel Wilson</h3>
+            <p class="card-desc">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="./index.html">WebStudio</a>
-      <p>
+    <footer class="footer">
+      <a class="logo-footer" href="./index.html">
+        <span class="logo-web">Web</span>Studio</a
+      >
+      <p class="footer-desc">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>

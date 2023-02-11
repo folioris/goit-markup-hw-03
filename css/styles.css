@@ -46,6 +46,7 @@ img {
 }
 
 .list {
+    text-decoration: none;
     list-style: none;
 }
 
@@ -54,6 +55,10 @@ img {
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.header {
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container {
@@ -308,8 +313,21 @@ padding-bottom: 120px;
 
 /* ПОРТФОЛІО */
 
+.portfolio{
+    padding-bottom: 120px;
+}
+
+.buttons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding-bottom: 72px;
+}
+
 
 .nav-buttons {
+    padding: 12px 24px;
+    margin-top: 96px;
     font-family: inherit;
         font-weight: 500;
         font-size: 16px;
@@ -328,7 +346,26 @@ color: var(--primary-bg-color);
 background-color: var(--accent-color);
 }
 
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+
+.portfolio-text {
+border: 1px solid #E7E9FC;
+flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 16px;
+    padding-bottom: 32px;
+    background-color: var(--primary-bg-color);
+}
+
 .caption-cards {
+    padding-top: 32px;
+    padding-bottom: 8px;
     color: var(--description-features);
     font-weight: 500;
         font-size: 20px;
